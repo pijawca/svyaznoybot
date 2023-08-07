@@ -4,11 +4,11 @@ from bs4 import BeautifulSoup
 from lxml import etree
 from misc import bot
 from PIL import Image, ImageFont, ImageDraw
+from handlers.embed import help_embed
 import requests
 import psycopg
 import disnake
 import config
-import embed
 import db
 import sys
 
@@ -23,7 +23,7 @@ async def on_ready():
     
 @bot.command()
 async def shelp(ctx):
-    await ctx.send(embed=embed.help_embed)
+    await ctx.send(embed=help_embed)
 
 @bot.command()
 async def reg(ctx, message):
