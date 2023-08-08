@@ -2,9 +2,14 @@ from disnake.ext import commands
 import disnake
 
 
-TOKEN = '#'
+TOKEN = 'MTEzNTkzOTQyNDcyNzg2NzU0Mg.GbgvhL.Y3kHKGB2iU2pGzS_fTV2TzSJQ6MlC3dDzf6OLs'
 
 DB_NAME = 'svyaznoybot'
+DB_USER = 'ilyaporotnikov'
+DB_PASSWORD = '0322'
+DB_HOST = 'localhost'
+DB_PORT = '5432'
+
 
 cookies = {
     '_ym_isad': '1',

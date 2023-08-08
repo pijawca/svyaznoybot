@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 import psycopg
-from config import DB_NAME
+from config import DB_NAME, DB_USER, DB_PASSWORD, DB_HOST, DB_PORT
 
 
 def create_table():
     try:
-        conn = psycopg.connect(host='localhost')
+        conn = psycopg.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASSWORD, host=DB_HOST, port=DB_PORT)
         with conn.cursor() as cur:
             cur.execute(
                 f"""CREATE TABLE {DB_NAME} (
@@ -26,4 +26,4 @@ def create_table():
             print(f'[DATABASE] База данных {DB_NAME} была создана.')
     except:
         pass
-            
+    

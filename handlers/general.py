@@ -5,11 +5,11 @@ from lxml import etree
 from misc import bot
 from PIL import Image, ImageFont, ImageDraw
 from handlers.embed import help_embed
+from config import DB_NAME, DB_USER, DB_PASSWORD, DB_HOST, DB_PORT
 import requests
 import psycopg
 import disnake
 import config
-import db
 import sys
 
 
@@ -75,7 +75,7 @@ async def reg(ctx, message):
         dmg = dom.xpath('//*[@id="DamageAvg"]/tr/td[3]/span')[0].text
 
         try:
-            conn = psycopg.connect(host='localhost')
+            conn = psycopg.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASSWORD, host=DB_HOST, port=DB_PORT)
             with conn.cursor() as cur:
                 cur.execute("""INSERT INTO svyaznoybot (
                     nickname, 
@@ -93,12 +93,13 @@ async def reg(ctx, message):
                 conn.commit()
                 conn.close()
                 cur.close()
+                
         except psycopg.errors.DuplicateDatabase:
                 pass
 
 @bot.command()
 async def ws(ctx, user: disnake.Member = None):
-    conn = psycopg.connect(host='localhost')
+    conn = psycopg.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASSWORD, host=DB_HOST, port=DB_PORT)
     conn.autocommit = True
     try:
         with conn.cursor() as cur:
@@ -177,7 +178,10 @@ async def ws(ctx, user: disnake.Member = None):
                 await ctx.send(embed = disnake.Embed(
                     title=f'Полезные ссылки:',
                     description=f'Внимание! Данная картинка обрабатывается ботом, возможны баги.\nПодробная статистика: https://kttc.ru/wot/ru/user/{user[0][2]}\nУзнать сколько нужно урона до 3-х отметок: https://poliroid.me/gunmarks\nСвежие новости: https://wotexpress.info/news/mir-tankov\nПортал игры LESTA: https://tanki.su'))
-                
+            conn.commit()
+            conn.close()
+            cur.close()
+            
     except:
         pass
     
