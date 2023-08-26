@@ -2,7 +2,7 @@ from disnake.ext import commands
 import disnake
 
 
-TOKEN = 'MTEzNTkzOTQyNDcyNzg2NzU0Mg.GbgvhL.Y3kHKGB2iU2pGzS_fTV2TzSJQ6MlC3dDzf6OLs'
+TOKEN = 'MTEzNTkzOTQyNDcyNzg2NzU0Mg.G1HH4K.DB0r3U45TwYAkLMfpb_3aHXGXtAPW35mhD3Wl4'
 
 DB_NAME = 'svyaznoybot'
 DB_USER = ''
