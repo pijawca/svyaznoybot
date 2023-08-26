@@ -1,3 +1,7 @@
+# SvyaznoyBot
+[![GitHub license](https://img.shields.io/github/license/pijawca/svyaznoybot?style=flat-square)](https://github.com//pijawca/svyaznoybot/LICENSE.md)
+[![Discord](https://img.shields.io/discord/674969920257130519?label=%D0%A1%D0%B5%D1%80%D0%B2%D0%B5%D1%80%20%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B8&logo=Discord&logoColor=white&style=flat-square)](https://discord.gg/Zspmr6Q4aZ)
+
 ![logo](https://i.ibb.co/vQKV7wC/pijawcalogo.png)
 
 >![preview](https://i.ibb.co/0fDZYQF/2023-08-05-22-12-08.png) <font size="1"> P.S соответствующий код может отличаться от скриншота.</font>
@@ -8,10 +12,13 @@
 
 ## TODO
 
-* Оптимизировать код PEP8
-* Добавить другие сервисы
-* Обновить информацию по боту в дискорде
-* Сделать цикл на обновление статистики WOT с последующей отправкой на сервер
+☑ Оптимизировать код PEP8
+
+□ Обновить информацию по боту в дискорде
+
+□ Сделать цикл на обновление статистики WOT с последующей отправкой на сервер
+
+□ Добавить функцию о доступности серверов
 
 ## Описание
 

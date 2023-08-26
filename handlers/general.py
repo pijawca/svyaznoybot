@@ -26,7 +26,7 @@ async def shelp(ctx):
     await ctx.send(embed=help_embed)
 
 @bot.command()
-async def reg(ctx, message):
+async def sreg(ctx, message):
     await ctx.send(f'Секундочку.. Проверяю профиль {message}')
     
     discord = ctx.author
@@ -98,7 +98,7 @@ async def reg(ctx, message):
                 pass
 
 @bot.command()
-async def ws(ctx, user: disnake.Member = None):
+async def sws(ctx, user: disnake.Member = None):
     conn = psycopg.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASSWORD, host=DB_HOST, port=DB_PORT)
     conn.autocommit = True
     try:
