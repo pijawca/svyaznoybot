@@ -1,6 +1,6 @@
 # SvyaznoyBot
 [![GitHub license](https://img.shields.io/github/license/pijawca/svyaznoybot?style=flat-square)](https://github.com//pijawca/svyaznoybot/LICENSE.md)
-[![Discord](https://img.shields.io/discord/674969920257130519?label=%D0%A1%D0%B5%D1%80%D0%B2%D0%B5%D1%80%20%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B8&logo=Discord&logoColor=white&style=flat-square)](https://discord.gg/Zspmr6Q4aZ)
+![Discord](https://img.shields.io/discord/1106578647705469009?label=%D0%A1%D0%B5%D1%80%D0%B2%D0%B5%D1%80%20%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B8&style=flat-square&logo=Discord&logoColor=white&link=https%3A%2F%2Fdiscord.gg%2FZspmr6Q4aZ)
 
 ![logo](https://i.ibb.co/vQKV7wC/pijawcalogo.png)
 
